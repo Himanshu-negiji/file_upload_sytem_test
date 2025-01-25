@@ -1,0 +1,20 @@
+<h1>Upload a New File</h1>
+
+<%= form_for @file_upload do |f| %>
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+
+  <div class="field">
+    <%= f.label :file %>
+    <%= f.file_field :file %>
+  </div>
+
+  <%= f.submit "Upload" %>
+<% end %>

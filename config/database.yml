@@ -1,0 +1,29 @@
+development:
+  adapter: mysql2
+  encoding: utf8mb4
+  database: testfile_upload_system_development
+  username: root        # Or your MySQL username
+  password:            # Leave empty if no password
+  host: localhost
+  pool: 5
+  timeout: 5000
+
+test:
+  adapter: mysql2
+  encoding: utf8mb4
+  database: testfile_upload_system_test
+  username: root        # Or your MySQL username
+  password:            # Leave empty if no password
+  host: localhost
+  pool: 5
+  timeout: 5000
+
+production:
+  adapter: mysql2
+  encoding: utf8mb4
+  database: testfile_upload_system_production
+  username: root        # Or your MySQL username
+  password:            # Add your MySQL password if necessary
+  host: localhost
+  pool: 5
+  timeout: 5000
